@@ -28,38 +28,38 @@ export default function (props) {
             <div className="Auth-form-container">
                 <form className="Auth-form">
                 <div className="Auth-form-content">
-                    <h3 className="Auth-form-title">Sign In</h3>
+                    <h3 className="Auth-form-title">Zaloguj się</h3>
                     <div className="text-center">
-                    Not registered yet?{" "}
+                    Nie masz konta?{" "}
                     <span className="link-primary" onClick={changeAuthModeToSignUp}>
-                        Sign Up
+                        Załóż konto
                     </span>
                     </div>
                     <div className="form-group mt-3">
-                    <label>Email address</label>
+                    <label>Adres email</label>
                     <input
                         type="email"
                         className="form-control mt-1"
-                        placeholder="Enter email"
+                        placeholder="Wpisz email"
                     />
                     </div>
                     <div className="form-group mt-3">
-                    <label>Password</label>
+                    <label>Hasło</label>
                     <input
                         type="password"
                         className="form-control mt-1"
-                        placeholder="Enter password"
+                        placeholder="Wpisz hasło"
                     />
                     </div>
                     <div className="d-grid gap-2 mt-3">
                     <button type="submit" className="btn btn-primary" onClick={routeChange}>
-                        Submit
+                        Prześlij
                     </button>
                     </div>
                     <div className="text-center">
-                        Forgot{" "}
+                        Zapomniałeś{" "}
                         <span className="link-primary" onClick={changeAuthModeToForgotPassword}>
-                        password?
+                        hasła?
                         </span>
                     </div>
                 </div>
@@ -71,47 +71,41 @@ export default function (props) {
             <div className="Auth-form-container">
                 <form className="Auth-form">
                     <div className="Auth-form-content">
-                    <h3 className="Auth-form-title">Sign Up</h3>
+                    <h3 className="Auth-form-title">Zarejestruj się</h3>
                     <div className="text-center">
-                        Already registered?{" "}
+                        Posiadasz konto?{" "}
                         <span className="link-primary" onClick={changeAuthModeToSignIn}>
-                        Sign In
+                        Zaloguj się
                         </span>
                     </div>
                     <div className="form-group mt-3">
-                        <label>Full Name</label>
+                        <label>Imię</label>
                         <input
                         type="text"
                         className="form-control mt-1"
-                        placeholder="e.g Jane Doe"
+                        placeholder="np. Tomasz"
                         />
                     </div>
                     <div className="form-group mt-3">
-                        <label>Email address</label>
+                        <label>Adres email</label>
                         <input
                         type="email"
                         className="form-control mt-1"
-                        placeholder="Email Address"
+                        placeholder="Adres email"
                         />
                     </div>
                     <div className="form-group mt-3">
-                        <label>Password</label>
+                        <label>Hasło</label>
                         <input
                         type="password"
                         className="form-control mt-1"
-                        placeholder="Password"
+                        placeholder="Hasło"
                         />
                     </div>
                     <div className="d-grid gap-2 mt-3">
                         <button type="submit" className="btn btn-primary">
-                        Submit
+                        Prześlij
                         </button>
-                    </div>
-                    <div className="text-center">
-                        Forgot{" "}
-                        <span className="link-primary" onClick={changeAuthModeToForgotPassword}>
-                        password?
-                        </span>
                     </div>
                     </div>
                 </form>
@@ -122,31 +116,31 @@ export default function (props) {
             <div className="Auth-form-container">
                 <form className="Auth-form">
                     <div className="Auth-form-content">
-                    <h3 className="Auth-form-title">Recover password</h3>
+                    <h3 className="Auth-form-title">Odzyskaj hasło</h3>
                     <div className="text-center">
-                        Remember password?{" "}
+                        Pamiętasz hasło?{" "}
                         <span className="link-primary" onClick={changeAuthModeToSignIn}>
-                        Sign In
+                        Zaloguj się
                         </span>
                     </div>
                     <div className="form-group mt-3">
-                        <label>Email address</label>
+                        <label>Adres email</label>
                         <input
                         type="email"
                         className="form-control mt-1"
-                        placeholder="Email Address"
+                        placeholder="Adres email"
                         />
                     </div>
                     <div className="d-grid gap-2 mt-3">
                         <button type="submit" className="btn btn-primary">
-                        Send email
+                        Wyślij email
                         </button>
                     </div>
                     <div className="text-center">
                         <span className="link-primary" onClick={changeAuthModeToSignUp}>
-                        Create
+                        Zarejestruj
                         </span>
-                        {" "}account
+                        {" "}się
                     </div>
                     </div>
                 </form>
